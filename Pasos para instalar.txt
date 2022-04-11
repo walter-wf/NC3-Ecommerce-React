@@ -1,0 +1,6 @@
+Pasos para instalar
+1. npm install react-router-dom ( para manejar el routing )
+2. npm install json-server json-server-auth ( crear fake bakend )
+3. npm install axios ( para crear request Ajax al fake backend )
+4. npm install jwt-decode  ( para parsear JTM al backend )
+5. npm install bulma ( CSS framework )
