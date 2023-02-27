@@ -1,6 +1,7 @@
 import React from "react";
 import ProductItem from "./ProductItem";
 import withContext from "../withContext";
+import Carrousel from "./Carrousel";
 
 const ProductList = props => {
   const { products } = props.context;
@@ -9,7 +10,8 @@ const ProductList = props => {
     <>
       <div className="hero is-primary">
         <div className="hero-body container">
-          <h4 className="title">Aca va el carrousel de imagenes</h4>
+          
+        
         </div>
       </div>
       <br />
@@ -26,7 +28,7 @@ const ProductList = props => {
           ) : (
             <div className="column">
               <span className="title has-text-grey-light">
-                No se encontraron productos
+             
               </span>
             </div>
           )}

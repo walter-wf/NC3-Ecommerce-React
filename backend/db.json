@@ -31,7 +31,7 @@
     {
       "id": "aoe8wvdxvrkfqsew67",
       "name": "shirts",
-      "stock": 13,
+      "stock": 12,
       "price": 149.99,
       "shortDesc": "Nulla facilisi. Curabitur at lacus ac velit ornare lobortis.",
       "description": "Cras sagittis. Praesent nec nisl a purus blandit viverra. Ut leo. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Fusce a quam."
@@ -48,7 +48,7 @@
       "id": "086q3ozzsg2xl1uu3mrd",
       "name": "Nintendo",
       "price": "200",
-      "stock": "10",
+      "stock": 8,
       "shortDesc": "Nintendo con Zelda",
       "description": "Nueva Nintendo Switch"
     },
@@ -64,7 +64,7 @@
       "id": "nq6l8vt2t5l1uubu7v",
       "name": "Nintendo",
       "price": "300",
-      "stock": "20",
+      "stock": 18,
       "shortDesc": "Nintendo ",
       "description": "Consola Nueva"
     },
@@ -75,6 +75,22 @@
       "stock": "20",
       "shortDesc": "Sony ps5",
       "description": "ps5"
+    },
+    {
+      "id": "j9x79imkwrl27lkotr",
+      "name": "ps5",
+      "price": "200",
+      "stock": "1",
+      "shortDesc": "ps5",
+      "description": "ps5"
+    },
+    {
+      "id": "xqh1g7e3a7jl27mbvcl",
+      "name": "Xbox",
+      "price": "200",
+      "stock": "20",
+      "shortDesc": "xbox",
+      "description": "asdasd"
     }
   ]
 }

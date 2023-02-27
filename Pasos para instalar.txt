@@ -4,3 +4,4 @@ Pasos para instalar
 3. npm install axios ( para crear request Ajax al fake backend )
 4. npm install jwt-decode  ( para parsear JTM al backend )
 5. npm install bulma ( CSS framework )
+6. Cambiar ""start": "react-scripts start" a "start": "react-scripts --openssl-legacy-provider start"

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Link, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import withContext from '../withContext';
 
-class Login extends Component {
+class NewUser extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,12 +14,12 @@ class Login extends Component {
   handleChange = e =>
     this.setState({ [e.target.name]: e.target.value, error: '' });
 
-  login = e => {
+  NewUser = e => {
     e.preventDefault();
 
     const { username, password } = this.state;
     if (!username || !password) {
-      return this.setState({ error: ' Completa tus datos ' });
+      return this.setState({ error: ' Completa  datos ' });
     }
     this.props.context.login(username, password).then(loggedIn => {
       if (!loggedIn) {
@@ -33,7 +33,7 @@ class Login extends Component {
       <>
         <div className="hero is-primary ">
           <div className="hero-body container">
-            <h4 className="title">Ingreso</h4>
+            <h4 className="title">Usuario nuevo</h4>
           </div>
         </div>
         <br />
@@ -42,20 +42,38 @@ class Login extends Component {
           <div className="columns is-mobile is-centered">
             <div className="column is-one-third">
               <div className="field">
-                <label className="label">Email: </label>
+                <label className="label">Nombre </label>
                 <input
                   className="input"
-                  type="email"
-                  name="username"
+                  type=""
+                  name=""
                   onChange={this.handleChange}
                 />
               </div>
               <div className="field">
-                <label className="label">Password: </label>
+                <label className="label">Apellido </label>
                 <input
                   className="input"
-                  type="password"
-                  name="password"
+                  type=""
+                  name=""
+                  onChange={this.handleChange}
+                />
+              </div>
+              <div className="field">
+                <label className="label">Direccion </label>
+                <input
+                  className="input"
+                  type=""
+                  name=""
+                  onChange={this.handleChange}
+                />
+              </div>
+              <div className="field">
+                <label className="label">Pais </label>
+                <input
+                  className="input"
+                  type=""
+                  name=""
                   onChange={this.handleChange}
                 />
               </div>
@@ -66,13 +84,6 @@ class Login extends Component {
                 <button className="button is-primary is-outlined is-pulled-right">
                   Enviar
                 </button>
-
-                <Link
-                  to="/newuser"
-                  className="button is-primary is-outlined is-pulled-left"
-                >
-                  Nuevo usuario
-                </Link>
               </div>
             </div>
           </div>
@@ -84,4 +95,4 @@ class Login extends Component {
   }
 }
 
-export default withContext(Login);
+export default withContext(NewUser);
